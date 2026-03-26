@@ -41,13 +41,14 @@ async function handleCommand(cmd) {
     print(`AURIX@NLIV:~$ ${cmd}`, 'dim');
 
     if (action === 'DECRYPT') {
-        if (!args[0]) {
+        const fullString = args.join(''); // Join all parts in case paste added spaces
+        if (!fullString) {
             print("ERROR: NO_STRING_PROVIDED", 'error');
             return;
         }
 
         print("ANALYZING_FRAGMENT_INTEGRITY...");
-        const inputHash = await sha256(args[0]);
+        const inputHash = await sha256(fullString);
         
         // Simulating processing time
         setTimeout(() => {
