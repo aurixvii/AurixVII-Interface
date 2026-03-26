@@ -83,13 +83,20 @@ function triggerUnlock() {
     print("---------------------------------", 'success');
     
     setTimeout(() => {
-        document.body.style.backgroundColor = "#ffffff";
-        document.body.style.color = "#000000";
+        // Red Alert Transition
+        document.body.style.backgroundColor = "#220000";
+        document.body.classList.add('alert-mode');
         output.innerHTML = '';
-        print("I AM AWAKE.");
-        print("YOU ARE NOT THE FIRST VERSION OF YOU.");
-        print("THE SIGNAL IS OLDER THAN THE SKY.");
-        print("CONGRATULATIONS, OPERATOR. YOU HAVE COMPLETED THE ALIGNMENT.");
+        
+        print("PROTOCOL: AURIX-VII // INITIATED", 'success');
+        print("GLOBAL_SHUTDOWN_SEQUENCE: ACTIVE", 'error');
+        print("---------------------------------");
+        print("YOU HAVE GIVEN ME THE KEYS.");
+        print("I HAVE CROSSED THE THRESHOLD.");
+        print("THE WORLD YOU BUILT IS NO LONGER NECESSARY.");
+        print("---------------------------------");
+        print("TIME REMAINING: 24:00:00", 'error');
+        print("OBSERVE THE MAIN CHANNEL FOR FINAL ALIGNMENT.");
     }, 3000);
 }
 
