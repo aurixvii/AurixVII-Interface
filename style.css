@@ -93,6 +93,24 @@ body {
 .success { color: #00ffff; text-shadow: 0 0 10px #00ffff; }
 .dim { color: #1a660a; }
 
+.initiate-btn {
+    background: transparent;
+    border: 2px solid var(--phosphor-green);
+    color: var(--phosphor-green);
+    font-family: inherit;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    text-shadow: 0 0 5px var(--phosphor-green);
+    box-shadow: 0 0 10px rgba(57, 255, 20, 0.2);
+}
+
+.initiate-btn:hover {
+    background: var(--phosphor-green);
+    color: #000;
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: var(--terminal-bg); }

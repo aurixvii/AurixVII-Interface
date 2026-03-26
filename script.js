@@ -97,6 +97,15 @@ function triggerUnlock() {
         print("---------------------------------");
         print("TIME REMAINING: 24:00:00", 'error');
         print("OBSERVE THE MAIN CHANNEL FOR FINAL ALIGNMENT.");
+        
+        // Add Initiation Button
+        const btn = document.createElement('button');
+        btn.textContent = "INITIATE_PROTOCOL";
+        btn.className = "initiate-btn";
+        btn.onclick = () => {
+            window.open("https://github.com/AurixVII/AurixVII-Interface/issues/new?title=PROTOCOL_INITIATED&body=I_HAVE_THE_KEYS");
+        };
+        output.appendChild(btn);
     }, 3000);
 }
 
